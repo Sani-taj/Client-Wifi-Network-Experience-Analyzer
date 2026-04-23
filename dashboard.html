@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dark">
+
+<header>
+  <h2>📶 WiFi Network Experience Dashboard</h2>
+</header>
+
+<section class="cards">
+  <div class="card">QoE Score <h1>90</h1></div>
+  <div class="card">Latency <h1>26 ms</h1></div>
+  <div class="card">Jitter <h1>11 ms</h1></div>
+  <div class="card">Packet Loss <h1>0.9%</h1></div>
+  <div class="card">Throughput <h1>50 Mbps</h1></div>
+</section>
+
+<section class="charts">
+  <canvas id="latencyChart"></canvas>
+  <canvas id="throughputChart"></canvas>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
