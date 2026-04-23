@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>WiFi Analyzer</h1>
+
+<div class="card">Latency: <span id="latency"></span></div>
+<div class="card">Jitter: <span id="jitter"></span></div>
+<div class="card">Loss: <span id="loss"></span></div>
+<div class="card">Throughput: <span id="throughput"></span></div>
+
+<div id="qoe" class="card"></div>
+<div id="root" class="card"></div>
+
+<canvas id="latencyChart"></canvas>
+<canvas id="throughputChart"></canvas>
+
+<button onclick="logout()">Logout</button>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
